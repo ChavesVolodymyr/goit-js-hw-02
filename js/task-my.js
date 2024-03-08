@@ -180,6 +180,8 @@
 //fizz якщо ділитися на 5 повертати buzz
 //Якщо ділитися на 3 і на 5 повернути fizzbuzz
 //    спробувати на свіч кейсі
+
+
 // function checkNumber(number) {
 //    if (number % 3 === 0 && number % 5 === 0) {
 //     return 'fizzbuzz'
