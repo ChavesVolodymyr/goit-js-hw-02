@@ -267,6 +267,10 @@
 //  * Індекс маси тіла необхідно округлити до однієї цифри після коми.
 //  */
 
-function calcBMI(weight, height) {
-  const  onlyWeight = 
-}
+// function calcBMI(weight, height) {
+//   const  onlyWeight = 
+// }
+
+
+
+

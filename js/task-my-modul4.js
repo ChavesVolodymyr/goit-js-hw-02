@@ -133,3 +133,51 @@
 // console.log(calculateTotalPrice("Grip")); // 10800
 // console.log(calculateTotalPrice("Scanner")); // 8100
 
+
+// !!!!!!!!!!!!
+// Використовуючи синтаксис залишкових параметрів,
+//доповни код функції add() так,
+// щоб вона приймала будь - яку кількість аргументів у параметр args і повертала їхню суму.
+
+// Оголошена функція add
+// Функція add оголошує параметр args
+// Для збирання аргументів у змінну args у підписі функції використовується
+//синтаксис залишкових параметрів
+
+// function add(...args) {
+//   let sum = 0;
+//   for (const num of args) {
+//     sum += num;
+//   }
+//   return sum;
+// }
+
+// console.log(add(15, 27)); // Виведе: 42
+// console.log(add(12, 4, 11, 48)); // Виведе: 75
+// console.log(add(32, 6, 13, 19, 8)); // Виведе: 78
+
+// function addOverNum(value, ...args) {
+//     let sum = 0;
+//     for (const totalAmount of args) {
+//         if (totalAmount > value) {
+//            sum += totalAmount;
+//         }
+//     }
+//     return sum;
+// }
+
+// console.log(addOverNum(50, 15, 27)); // Поверне 0
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); // Поверне 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8)); // Поверне 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); // Поверне 218
+
+
+// function getExtremeScores(scores) {
+//     const best = Math.max(...scores);
+//     const worst = Math.min(...scores);
+//     return { best, worst }
+// }
+
+// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26])); // Поверне об'єкт { best: 93, worst: 17 }
+// console.log(getExtremeScores([19, 7, 4, 17, 81, 24])); // Поверне об'єкт { best: 81, worst: 4 }
+
