@@ -1,4 +1,3 @@
-
 // function getLength(array) {
 //   const backLength = array.join (' ');
 //   return backLength.length;
@@ -7,8 +6,6 @@
 // console.log(getLength(["Mango", "hurries", "to", "the", "train"])); // 22
 // console.log(getLength(["M", "a", "n", "g", "o"])); // 5
 // console.log(getLength(["top", "picks", "for", "you"])); // 14
-
-
 
 // function calculateEngravingPrice(message, pricePerWord) {
 //   const firstString = message.split(' ');
@@ -20,7 +17,6 @@
 // console.log(calculateEngravingPrice("JavaScript is in my blood", 20)); // 100
 // console.log(calculateEngravingPrice("Web-development is creative work", 40)); // 160
 // console.log(calculateEngravingPrice("Web-development is creative work", 20)); // 80
-
 
 // function getSlice(array, value) {
 //   const index = array.indexOf(value);
@@ -35,7 +31,6 @@
 // console.log(getSlice(["Mango", "Poly", "Ajax"], "Mango")); // ["Mango"]
 // console.log(getSlice(["Mango", "Poly", "Ajax"], "Jacob")); // []
 // console.log(getSlice(["Mango", "Poly", "Ajax"], "Casey")); // []
-
 
 // взагалі не зрозумів
 // function calculateTotalPrice(order) {
@@ -76,8 +71,7 @@
 // console.log(checkStorage(["apple", "plum", "pear"], "pLuM"));
 // console.log(checkStorage(["apple", "plum", "pear"], "plum"));
 
-
-
+// ******* Додаткове *****\\
 //Напишіть программу, яка отримує від користувача
 //число (кількість хвилин) и виводить у консоль
 //рядок у форматі годин та хвилин
@@ -117,7 +111,6 @@
 //   return total;
 // }
 // console.log(countTotal(100, 2));
-    
 
 // Змінна num може набувати 4 значення: 1, 2, 3 або 4. Якщо вона має
 // значення '1', то у змінну result запишемо 'зима', якщо має значення
@@ -168,10 +161,10 @@
 //   //   console.log("Невірний пароль!");
 //   // }
 //   console.log(password === "Я головний" ? "Вітаю!" : "Невірний пароль!");
-  
+
 // } else if (login === '' || login === null) {
 // console.log("Скасовано");
-  
+
 // } else {
 //   console.log("Я вас не знаю");
 // }
@@ -180,7 +173,6 @@
 //fizz якщо ділитися на 5 повертати buzz
 //Якщо ділитися на 3 і на 5 повернути fizzbuzz
 //    спробувати на свіч кейсі
-
 
 // function checkNumber(number) {
 //    if (number % 3 === 0 && number % 5 === 0) {
@@ -192,7 +184,7 @@
 //   if (number % 5 === 0) {
 //     return 'buzz'
 //   }
- 
+
 //   return 'error'
 // }
 // console.log(checkNumber(27));
@@ -217,11 +209,10 @@
 // function logItems (array) {
 //   for (let i = 0; i < array.length; i++){
 //     console.log(`${i + 1} - ${array[i]}`);
-   
+
 //   }
 // }
 // console.log(logItems(logins));
-
 
 // Напиши функцію, яка перебирає масив логінів і перевіряє
 // чи є ім'я введене в інпут у цьому масиві і у разі,
@@ -229,14 +220,13 @@
 // в іншому випадку - "Користувач не знайден"
 // function checkLogin(array) {
 //   const login = prompt('Login')
-  // for (const element of array) {
-  //   if (login === element) {
-  //     return "Доступ дозволено"
-  //   }    
-  // }
-  // return "Користувач не знайден"
-  
-  
+// for (const element of array) {
+//   if (login === element) {
+//     return "Доступ дозволено"
+//   }
+// }
+// return "Користувач не знайден"
+
 //   if (array.includes(login)) {
 //     return "Доступ дозволено"
 //   }
@@ -254,8 +244,6 @@
 // }
 // console.log(newString);
 
-
-
 //  * Напиши функцію calcBMI(weight, height) яка розраховує та повертає індекс
 //  * маси тіла людини. Для цього необхідно розділити вагу на
 //  * квадрат висоти.
@@ -268,9 +256,5 @@
 //  */
 
 // function calcBMI(weight, height) {
-//   const  onlyWeight = 
+//   const  onlyWeight =
 // }
-
-
-
-
