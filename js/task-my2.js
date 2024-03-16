@@ -16,7 +16,7 @@
 //* В іншому випадку функція повертає рядок "The order is accepted, our manager will contact you".
 
 // function checkStorage(available, ordered) {
-//   if (!ordered) {
+//   if (ordered === 0) {
 //     return 'There are no products in the order!';
 //   } else if (available < ordered) {
 //     return 'Your order is too large, there are not enough items in stock!';
@@ -59,19 +59,13 @@
 // console.log(getFileName('index')); // Виведе: "index"
 
 // function calculateTotal(number) {
-//   // Ініціалізуємо змінну для зберігання суми
 //   let total = 0;
 
-//   // Використовуємо цикл for для додавання чисел від 1 до number до суми
 //   for (let i = 1; i <= number; i++) {
 //     total += i;
 //   }
-
-//   // Повертаємо суму
 //   return total;
 // }
-
-// // Виклики функції calculateTotal з різними параметрами
 // console.log(calculateTotal(1)); // Поверне: 1
 // console.log(calculateTotal(0)); // Поверне: 0
 // console.log(calculateTotal(7)); // Поверне: 28
@@ -104,3 +98,10 @@
 // console.log(calculateEvenTotal(7)); // Поверне: 12
 // console.log(calculateEvenTotal(18)); // Поверне: 90
 // console.log(calculateEvenTotal(27)); // Поверне: 182
+
+// function calculateTax(amount, taxRate) {
+//     for (let index = amount; index < amountrray.length; index++)amount{
+//         const element = array[index];
+// amount
+//     }
+// }
