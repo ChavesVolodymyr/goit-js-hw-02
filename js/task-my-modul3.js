@@ -22,7 +22,6 @@
 // function calculateTax(amount, taxRate = 0.2) {
 //   return amount * taxRate
 // }
-// // ?? до чого тут 0.2???
 
 // console.log(calculateTax(100, 0.1));
 // console.log(calculateTax(200, 0.1));
@@ -33,36 +32,13 @@
 // console.log(calculateTax(100));
 // console.log(calculateTax(200));
 
-// ?????домашня робота №3
-
-// function filterArray(numbers, value) {
-//     let result = [];
-//     for (let i = value; i < numbers.length; i++) {
-//         if (numbers[i] > value) {
-//           result.push (i)
-//         }
-//     }
-//     return result
-// }
-
-// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
-
-// function filterArray(numbers, value) {
-//     let result = [];
-//   for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] > value) {
-//       result.push(numbers[i]);
-//     }
-//   }
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const strings = message.split(' ').length;
+//   const result = strings * pricePerWord;
 //   return result;
 // }
 
-// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
+console.log(calculateEngravingPrice('JavaScript is in my blood', 10));
+console.log(calculateEngravingPrice('JavaScript is in my blood', 20));
+console.log(calculateEngravingPrice('Web-development is creative work', 40));
+// ?????домашня робота №3
