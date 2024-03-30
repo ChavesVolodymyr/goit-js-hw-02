@@ -1,35 +1,5 @@
-// function deliverPizza(pizzaName) {
-//   return `Delivering ${pizzaName} pizza.`;
-// }
-
-// function makePizza(pizzaName) {
-//   return `Pizza ${pizzaName} is being prepared, please wait...`;
-// }
-
-// function makeMessage(pizzaName, callback) {
-//   return callback(pizzaName);
-// }
-
-// // Приклади використання
-// const message1 = makeMessage('Royal Grand', makePizza);
-// console.log(message1); // Виведе: "Pizza Royal Grand is being prepared, please wait..."
-
-// const message2 = makeMessage('Ultracheese', deliverPizza);
-// console.log(message2); // Виведе: "Delivering Ultracheese pizza."
-
 // !!!! INLAIN-CALLBACK
-// function makePizza(pizzaName, callback) {
-//   console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
-//   callback(pizzaName);
-// }
 
-// makePizza('Royal Grand', function deliverPizza(pizzaName) {
-//   console.log(`Delivering pizza ${pizzaName}`);
-// });
-
-// makePizza('Ultracheese', function eatPizza(pizzaName) {
-//   console.log(`Eating pizza ${pizzaName}`);
-// });
 // !!!! Метод forEach(callback)
 // function calculateTotalPrice(orderedItems) {
 //   let totalPrice = 0;
@@ -45,27 +15,10 @@
 // console.log(calculateTotalPrice([164, 48, 291]));
 // console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
-// function filterArray(numbers, value) {
-//   let newArray = [];
-//   numbers.forEach(numbers => {
-//     //застряг із синтаксом
-//     if (numbers > value) {
-//       newArray.push(numbers); // Забув про push
-//     }
-//   });
-//   return newArray;
-// }
-
-// console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
-// console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
-// console.log(filterArray([1, 2, 3, 4, 5], 5)); // []
-// console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
-// console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
-
 //!! Стрілочні функції
 
 // const calculateTotalPrice = (quantity, pricePerItem) => {
-//   return quantity * pricePerItem;
+//   return quantity / pricePerItem;
 // };
 // console.log(calculateTotalPrice(5, 100)); // 500
 // console.log(calculateTotalPrice(8, 60)); // 480
@@ -94,15 +47,13 @@
 // console.log(calculateTotalPrice([412, 371, 94, 63, 176])); // 1116
 
 // const filterArray = (numbers, value) => {
-//   const filteredNumbers = [];
-
+//   const result = [];
 //   numbers.forEach(number => {
 //     if (number > value) {
-//       filteredNumbers.push(number);
+//       result.push(number);
 //     }
 //   });
-
-//   return filteredNumbers;
+//   return result;
 // };
 
 // console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
@@ -120,16 +71,25 @@
 //     }
 //   });
 // };
-
+///!!! Передивитись!
+// const changeEven = (numbers, value) => {
+//   const result = [];
+//   numbers.forEach(number => {
+//     //* чому тут потрібний return?
+//     if (number % 2 === 0) {
+//       result.push(number + value);
+//     } else {
+//       result.push(number);
+//     }
+//   });
+//   return result;
+// };
 // console.log(changeEven([1, 2, 3, 4, 5], 10));
 // console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
 // console.log(changeEven([17, 24, 68, 31, 42], 100));
 // console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
 
-// const planets = ['Earth', 'Mars', 'Venus', 'Jupiter'];
 //! Method MAP
-// const planetsLengths = planets.map(planet => planet.length);
-// console.log(planetsLengths);
 
 // const books = [
 //   {
@@ -241,11 +201,11 @@
 //     age: 39,
 //   },
 // ];
-
-// // const getUserEmails = users => users.map(user => user.email);
-// const getUserEmails = users => {
-//   return users.map(user => user.email);
-// };
+// // const getUserEmails = users => users.flatMap(user => user.skills);
+// const getUserEmails = users => users.map(user => user.skills);
+// // const getUserEmails = users => {
+// //   return users.map(user => user.email);
+// // };
 
 // console.log(getUserEmails(users));
 
@@ -277,8 +237,14 @@
 //     author: 'Fyodor Dostoevsky',
 //     rating: 7.75,
 //   },
-//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
-//   { title: 'Enemy of God', author: 'Bernard Cornwell', rating: 8.67 },
+//   { title: 'Redder Than Blood',
+// author: 'Tanith Lee',
+//   rating: 7.94
+// },
+//   { title: 'Enemy of God',
+// author: 'Bernard Cornwell',
+//   rating: 8.67
+// },
 // ];
 
 // const MIN_RATING = 8;
@@ -389,7 +355,7 @@
 // console.log(getUserWithEmail(users, 'elmahead@omatom.com'));
 
 // * Метод reduce() і масив об'єктів
-
+//передивитись!
 // const players = [
 //   { name: 'Mango', playtime: 1270, gamesPlayed: 4 },
 //   { name: 'Poly', playtime: 469, gamesPlayed: 2 },
@@ -397,10 +363,20 @@
 //   { name: 'Kiwi', playtime: 241, gamesPlayed: 1 },
 // ];
 
-// const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
-//   return acc + player.playtime / player.gamesPlayed;
-// }, 0);
-// console.log(totalAveragePlaytimePerGame);
+// // const totalAveragePlaytimePerGame = players.reduce((acc, player) => {
+// //   return acc + player.playtime / player.gamesPlayed;
+// // }, 0);
+// // console.log(totalAveragePlaytimePerGame);
+// //???Прийняла автоперевірка
+// // const playtimes = Object.values(players); // [1270, 468, 710, 244]
+
+// // const totalPlayTime = playtimes.reduce((previousValue, number) => {
+// //   return previousValue + number;
+// // }, 0);
+
+// // const averagePlayTime = totalPlayTime / playtimes.length;
+// // console.log(averagePlayTime);
+// //???Прийняла автоперевірка^^^^
 
 // const calculateTotalBalance = users => {
 //   return users.reduce((previousValue, user) => {
@@ -409,33 +385,33 @@
 // };
 // console.log(calculateTotalBalance(users));
 
-const books = [
-  {
-    title: 'The Last Kingdom',
-    author: 'Bernard Cornwell',
-    rating: 8.38,
-  },
-  {
-    title: 'Beside Still Waters',
-    author: 'Robert Sheckley',
-    rating: 8.51,
-  },
-  {
-    title: 'The Dream of a Ridiculous Man',
-    author: 'Fyodor Dostoevsky',
-    rating: 7.75,
-  },
-  { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
-  {
-    title: 'The Dreams in the Witch House',
-    author: 'Howard Lovecraft',
-    rating: 8.67,
-  },
-];
-const MIN_BOOK_RATING = 8;
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+//   {
+//     title: 'The Dreams in the Witch House',
+//     author: 'Howard Lovecraft',
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
 
-const names = books
-  .filter(book => book.rating >= MIN_BOOK_RATING)
-  .map(book => book.author)
-  .toSorted((a, b) => a.localeCompare(b));
-console.log(names);
+// const names = books
+//   .filter(book => book.rating >= MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .toSorted((a, b) => a.localeCompare(b));
+// console.log(names);
